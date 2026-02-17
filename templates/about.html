@@ -3,9 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>My Website - About</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
 </head>
 <body>
 	<h1>Matthew Martin</h1>
 	<p>My name is Matthew Martin. I like ice cream. I like chocolate too.</p>
+
+	<img src="{{ url_for('static', filename='icecream.jpg') }}" 
+	     alt="Ice Cream" 
+	     width="300">
+
 </body>
 </html>
